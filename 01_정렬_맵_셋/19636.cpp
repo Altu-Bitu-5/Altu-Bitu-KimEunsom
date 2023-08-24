@@ -1,4 +1,4 @@
-//ì•ŒíŠœë¹„íŠœ 1ì£¼ì°¨ 3ë²ˆ ê³¼ì œ #êµ¬í˜„ <19636 ìš”ìš” ì‹œë®¬ë ˆì´ì…˜>
+//¾ËÆ©ºñÆ© 1ÁÖÂ÷ 3¹ø °úÁ¦ #±¸Çö <19636 ¿ä¿ä ½Ã¹Ä·¹ÀÌ¼Ç>
 
 #include <iostream>
 #include <cmath>
@@ -6,7 +6,7 @@
 using namespace std;;
 
 
-//ê¸°ì´ˆëŒ€ì‚¬ëŸ‰ ë³€í™” ê³ ë ¤ ì•ˆí•˜ëŠ” ê²½ìš°
+//±âÃÊ´ë»ç·® º¯È­ °í·Á ¾ÈÇÏ´Â °æ¿ì
 void nonchangeX(int w, int d, int l, int l0, int a) {
 	w += d * (l - (l0 + a));
 
@@ -19,22 +19,22 @@ void nonchangeX(int w, int d, int l, int l0, int a) {
 }
 
 
-//ê¸°ì´ˆëŒ€ì‚¬ëŸ‰ ë³€í™” ê³ ë ¤í•˜ëŠ” ê²½ìš°
+//±âÃÊ´ë»ç·® º¯È­ °í·ÁÇÏ´Â °æ¿ì
 void changeX(int w, int l0, int t, int d, int l, int a, int x) {
 
-	int flag = 0; //Danger Dietì¸ ê²½ìš°ì—” flagê°’ 1ë¡œ ë°”ê¾¸ê¸°.
+	int flag = 0; //Danger DietÀÎ °æ¿ì¿£ flag°ª 1·Î ¹Ù²Ù±â.
 
 	while (d > 0) {
 
 		double res = l - (a + x);
 
-		//ì²´ì¤‘ ë³€í™”
+		//Ã¼Áß º¯È­
 		w += res;
 
-		//ê¸°ì´ˆëŒ€ì‚¬ëŸ‰ ë³€í™”
+		//±âÃÊ´ë»ç·® º¯È­
 		if (abs(res) > t) {
 
-			//ìŒìˆ˜ì˜ ë‚˜ëˆ—ì…ˆ ê°’ ë³´ì •. c++ì€ -5/2ê°€ -2ë¡œ ë‚˜ì˜¤ë¯€ë¡œ, ìŒìˆ˜ì¸ ê²½ìš° -1ì„ ê³±í•´ ì–‘ìˆ˜ë¡œ ë°”ê¾¸ê³  ë°˜ì˜¬ë¦¼í•œ í›„, ë‹¤ì‹œ ìŒìˆ˜ë¡œ ë°”ê¿”ì¤Œ.
+			//À½¼öÀÇ ³ª´°¼À °ª º¸Á¤. c++Àº -5/2°¡ -2·Î ³ª¿À¹Ç·Î, À½¼öÀÎ °æ¿ì -1À» °öÇØ ¾ç¼ö·Î ¹Ù²Ù°í ¹Ý¿Ã¸²ÇÑ ÈÄ, ´Ù½Ã À½¼ö·Î ¹Ù²ãÁÜ.
 			if (res < 0) {
 				res *= -1;
 				res = round(res / 2.0);
@@ -71,13 +71,14 @@ int main() {
 	cin >> w >> l0 >> t;
 	cin >> d >> l >> a;
 
-	int x = l0; //xëŠ” ê¸°ì´ˆëŒ€ì‚¬ëŸ‰ ê°’ ë‹´ì„ ë³€ìˆ˜
+	int x = l0; //x´Â ±âÃÊ´ë»ç·® °ª ´ãÀ» º¯¼ö
 
-	nonchangeX(w, d, l, l0, a); //ê¸°ì´ˆëŒ€ì‚¬ëŸ‰ ë³€í™” ê³ ë ¤ì•ˆí•˜ëŠ” ê²½ìš°
-	changeX(w, l0, t, d, l, a, x); //ê¸°ì´ˆëŒ€ì‚¬ëŸ‰ ë³€í™” ê³ ë ¤í•˜ëŠ” ê²½ìš°
+	nonchangeX(w, d, l, l0, a); //±âÃÊ´ë»ç·® º¯È­ °í·Á¾ÈÇÏ´Â °æ¿ì
+	changeX(w, l0, t, d, l, a, x); //±âÃÊ´ë»ç·® º¯È­ °í·ÁÇÏ´Â °æ¿ì
 
 	return 0;
 }
+
 
 
 
