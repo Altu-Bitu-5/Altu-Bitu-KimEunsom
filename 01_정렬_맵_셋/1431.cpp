@@ -1,11 +1,11 @@
-//ì•ŒíŠœë¹„íŠœ 1ì£¼ì°¨ 1ë²ˆ ê³¼ì œ #ì •ë ¬ <1431 ì‹œë¦¬ì–¼ ë²ˆí˜¸>
+//¾ËÆ©ºñÆ© 1ÁÖÂ÷ 1¹ø °úÁ¦ #Á¤·Ä <1431 ½Ã¸®¾ó ¹øÈ£>
 
 #include <iostream>
 #include <algorithm>
 
 using namespace std;
 
-//ìë¦¬ìˆ˜ í•© êµ¬í•˜ëŠ” í•¨ìˆ˜
+//ÀÚ¸®¼ö ÇÕ ±¸ÇÏ´Â ÇÔ¼ö
 int sumNum(string str) {
 	int sum = 0;
 	for (int i = 0; i < str.length(); i++) {
@@ -16,26 +16,26 @@ int sumNum(string str) {
 	return sum;
 }
 
-//ë¹„êµí•¨ìˆ˜
+//ºñ±³ÇÔ¼ö
 bool cmp(const string& w1, const string& w2) {
 	int l1 = w1.length();
 	int l2 = w2.length();
 
-	//ê¸¸ì´ ê°™ì€ ê²½ìš° : ìë¦¬ìˆ˜ ê³„ì‚°
+	//±æÀÌ °°Àº °æ¿ì : ÀÚ¸®¼ö °è»ê
 	if (l1 == l2) {
 		int sum1 = sumNum(w1);
 		int sum2 = sumNum(w2);
 
 		if (sum1 == sum2) {
-			//ìë¦¿ìˆ˜ ê°™ìœ¼ë©´ ì‚¬ì „ìˆœ ì •ë ¬
+			//ÀÚ¸´¼ö °°À¸¸é »çÀü¼ø Á¤·Ä
 			return w1 < w2;
 		}
 		else {
-			return sum1 < sum2; //ìë¦¿ìˆ˜ í•© ê¸°ì¤€ ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬
+			return sum1 < sum2; //ÀÚ¸´¼ö ÇÕ ±âÁØ ¿À¸§Â÷¼ø Á¤·Ä
 		}
 	}
 
-	//ê¸¸ì´ ë‹¤ë¥¸ ê²½ìš° : ê¸¸ì´ ê¸°ì¤€ ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬
+	//±æÀÌ ´Ù¸¥ °æ¿ì : ±æÀÌ ±âÁØ ¿À¸§Â÷¼ø Á¤·Ä
 	else {
 		return l1 < l2;
 	}
@@ -50,16 +50,16 @@ int main() {
 	string word[50];
 	int l[50];
 
-	//ì…ë ¥
+	//ÀÔ·Â
 	for (int i = 0; i < n; i++) {
 		cin >> word[i];
 	}
 	
-	//ì—°ì‚°
-	sort(word, word + n, cmp); //ë¹„êµí•¨ìˆ˜
+	//¿¬»ê
+	sort(word, word + n, cmp); //ºñ±³ÇÔ¼ö
 
 
-	//ì •ë ¬ëœ ë¬¸ìì—´ ë°°ì—´ì„ ì¶œë ¥
+	//Á¤·ÄµÈ ¹®ÀÚ¿­ ¹è¿­À» Ãâ·Â
 	for (int i = 0; i < n; i++) {
 		cout << word[i] << endl;
 	}
