@@ -1,0 +1,56 @@
+[33mcommit c75e1fae1ade668b71a93161c3a7df4b882d3ed9[m[33m ([m[1;36mHEAD -> [m[1;32m08_DFS_BFS[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: 1ab1b97 04b70a4
+Author: somsom <72211340+kimeunsom@users.noreply.github.com>
+Date:   Tue Sep 19 14:38:50 2023 +0900
+
+    Merge pull request #3 from Altu-Bitu-5/04_브루트포스
+    
+    [브루트포스] 9월 19일
+
+[33mcommit 04b70a4979c90ba8f96bcb902419e644b855a832[m[33m ([m[1;31morigin/04_브루트포스[m[33m)[m
+Author: unknown <somi5488@naver.com>
+Date:   Tue Sep 19 01:37:49 2023 +0900
+
+    [브루트포스] 9월 18일
+
+[33mcommit 637350e790803c319294f7b8fe9cf84e01df6340[m
+Author: unknown <somi5488@naver.com>
+Date:   Wed Sep 13 18:51:29 2023 +0900
+
+    [브루트포스] 9월 13일
+
+[33mcommit 46dd74773d131d58d33164c9d36b9d7a0bf2e838[m[33m ([m[1;31morigin/03_정수론[m[33m)[m
+Author: unknown <somi5488@naver.com>
+Date:   Wed Sep 6 18:35:34 2023 +0900
+
+    [정수론] 9월 6일
+
+[33mcommit 0a50faf95aa260e4435bb37b9c41dd7652b25e82[m
+Author: unknown <somi5488@naver.com>
+Date:   Wed Sep 6 16:23:30 2023 +0900
+
+    [정수론] 9월 6일
+
+[33mcommit 050c8cffe428a01cf15880c3c17e3ffeb0d157fe[m[33m ([m[1;31morigin/01_정렬_맵_셋[m[33m)[m
+Author: unknown <somi5488@naver.com>
+Date:   Thu Aug 24 21:26:43 2023 +0900
+
+    [정렬, 맵, 셋] 8월 24일
+
+[33mcommit 10fc0751b32a2f2a655033b37547b798e51ecdbe[m
+Author: unknown <somi5488@naver.com>
+Date:   Wed Aug 23 11:37:08 2023 +0900
+
+    [정렬, 맵, 셋] 8월 23일
+
+[33mcommit 6556d47ec0d698163ec2c9aa4932a56d0a4b1690[m
+Author: unknown <somi5488@naver.com>
+Date:   Wed Aug 23 11:27:10 2023 +0900
+
+    [정렬, 맵, 셋] 8월 23일
+
+[33mcommit 1ab1b97a09888af0e348e3d3fa6bb612f59855bc[m
+Author: somsom <72211340+kimeunsom@users.noreply.github.com>
+Date:   Tue Aug 22 19:11:09 2023 +0900
+
+    Initial commit
